@@ -1,0 +1,41 @@
+Box Sizing/Border Box
+=====================
+
+border:bsc;
+box-sizing:content-box;
+outline:bsc;
+
+
+box-sizing:border-box;
+
+Clip-Path
+=========
+
+clip-path:finction();
+shape-outside:function();
+overflow:hidden;
+
+function => circle(), ellipse(), pollygon();
+
+Width & Height
+==============
+
+width, min-width, max-width
+height, min-height, max-height
+
+Counter
+=======
+
+counter-reset:varname;
+
+counter-increment:varname;
+content:counter(varname);
+
+Column Count
+============
+column-count: no.of col;
+column-gap: px;
+
+column-rule:bsc;
+
+For Header: column-span: all/none;

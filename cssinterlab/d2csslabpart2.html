@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Counter Lab</title>
+		<style type="text/css">
+
+			h1{
+				text-align: center;
+				counter-reset: idx;
+				color: lightcoral;
+/*				hvbc*/
+				text-shadow: 3px -3px 3px lightpink ;
+				text-decoration: underline;
+
+			}
+
+			h2::before{
+				counter-increment: idx;
+				content: counter(idx)".";
+
+			}
+
+			h2{
+				counter-reset: subidx;
+				color: lightsalmon;
+			}
+
+			h3::before{
+
+				counter-increment: subidx;
+				content: counter(idx)"."counter(subidx)" : ";
+			}
+
+
+			h3{
+				counter-reset: dept;
+			}
+
+			h4::before{
+				counter-increment: dept;
+				content: counter(dept)".";
+			}
+
+			h4{
+				counter-reset: subdept;
+				color: lightsalmon;
+			}
+
+			h5::before{
+				counter-increment: subdept;
+				content: counter(dept)"."counter(subdept)" : ";
+			}
+
+			section{
+
+				column-count: 4;
+				column-gap: 30px;
+				text-align: justify;
+				column-rule: 3px dotted blue;
+
+			}
+			.lorem{
+				column-span: all;
+
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		<div>
+
+			<h1>Total Bank List of Myanmar</h1>
+
+			<h2>State Own Bank</h2>
+
+			<h3>Myanmar Economic Bank</h3>
+			<h3>Myanmar Agriculture Bank</h3>
+			<h3>Myanmar Investment and Commercial Bank</h3>
+			<h3>Myanmar Foreign Trade Bank</h3>
+			
+
+			<h2>Commercial Banks</h2>
+
+			<h3>Yoma Bank</h3>
+			<h3>KBZ Bank</h3>
+			<h3>AYA Bank</h3>
+			<h3>A Bank</h3>
+			<h3>FDB Bank</h3>
+			<h3>CHID Bank</h3>
+
+			<h2>Foreign Banks</h2>
+
+			<h3>BIDV Bank</h3>
+			<h3>OCBC Bank</h3>
+			<h3>UOV Bank</h3>
+			<h3>SBI Bank</h3>
+			<h3>Shinhan Bank</h3>
+			<h3>KB Bank</h3>
+
+			<h4>Department List of CBM</h4>
+
+			<h5>FISD DEPT</h5>
+			<h5>FEMD DEPT</h5>
+			<h5>FMD DEPT</h5>
+			<h5>AHRD DEPT</h5>
+			<h5>AUDIT</h5>
+			<h5>Research Dept</h5>
+			<h5>Anti Money Loundary</h5>
+
+			<hr/>
+
+			<section>
+				<h1 class="lorem">What is Lorem Ipsum?</h1>
+				<p><b>Lorem Ipsum 1</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 2</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 3 </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 4</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 5 </b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 6 </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 7 </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 8</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 9 </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+			<p><b>Lorem Ipsum 10 </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</section>
+			
+
+
+
+
+
+
+
+			
+		</div>
+
+	</body>
+</html>

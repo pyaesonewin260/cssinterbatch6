@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform with Rotate</title>
+		<style type="text/css">
+
+			.container{
+				width: 1200px;
+				background-color: dimgray;
+
+
+/*				1rem = 16px;   (root element's font size)*/
+				margin: 3rem 0;
+			}
+
+			.container .square{
+
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				color: #fff;
+				font-size: 20px;
+
+				text-align: center;
+				line-height: 50px;
+
+				border-radius: 10px;
+
+				transition-property: transform;
+				transition-duration: 1s;  /*(default)*/
+				transition-timing-function: linear;
+
+			}
+
+			#rotate:hover{
+/*				rotate(anglexy)*/
+
+/*				transform: rotate(45deg);*/
+/*				transform: rotate(-45deg);*/
+/*				transform: rotate(90deg);*/
+
+/*				transform: rotate(360deg);*/
+/*				transform: rotate(720deg);*/
+
+
+/*				1turn=360deg*/
+/*				transform: rotate(4turn);*/
+/*				transform: rotate(-2turn);*/
+
+
+
+/*				400grad=360deg=1turn*/
+/*				transform: rotate(400grad);*/
+
+
+			}
+
+			#rotatex:hover{
+/*				rotateX(angleX)*/
+
+/*				transform: rotateX(400grad);*/
+/*				transform: rotateX(45deg);*/
+				transform: rotateX(-45deg);
+
+			}
+			#rotatey:hover{
+/*				rotateY(angleY)*/
+
+/*				transform: rotateY(400grad);*/
+/*				transform: rotateY(45deg);*/
+				transform: rotateY(-45deg);
+
+			}
+					
+
+			
+
+			
+
+		</style>	
+
+
+	</head>
+	<body>
+
+		<div class="container">
+			<div id="rotate" class="square">DIV 1 XY</div>
+		</div>
+
+		<div class="container">
+			<div id="rotatex" class="square">DIV 1 rotate X</div>
+		</div>
+
+		<div class="container">
+			<div id="rotatey" class="square">DIV 1 rotate Y</div>
+		</div>
+		
+	</body>
+</html>
+
+<!-- 24FL -->

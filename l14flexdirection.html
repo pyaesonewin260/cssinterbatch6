@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flex Direction</title>
+		<style type="text/css">
+
+
+				body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center; /* hc not fix */
+				align-items: center;	/* vc  not fix */
+			}
+
+			.container{
+				width: 1200px;  /* default left */	
+				height: 800px;		
+				background-color: dimgray;
+
+/*				display: flex;*/
+/*				justify-content: start;*/  /* left_Default*/
+/*				justify-content: center;*/  
+/*				justify-content: end;*/    /* right */
+
+/*			justify-content: space-between;   /*(space between each DIV with margin 0)*/
+
+/*			justify-content: space-around;    space between each DIV with margin)*/
+
+/*				display: flex;*/
+/*				align-items: start;   (top_Default)*/
+/*				align-items: center;*/
+/*				align-items: end;    (bottom)*/
+
+
+/*				display: flex;*/
+/*				flex-direction: column;*/
+/*				justify-content: center; /* (vertical center coz flex-direction) */
+/*				align-items: center;  /*(horizontal center coz flex-direction) */
+
+
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;   /* _vertical */
+/*				justify-content: space-around;     /* _vertical  */
+
+
+/*				display: flex;*/
+/*				flex-direction: row;  (Default_left side)*/
+/*				justify-content: center;*/
+/*				align-items: center;*/
+
+/*				display: flex;*/
+/*				flex-direction: column-reverse; (reversr the serial and show bottom side)*/
+
+/*				flex-direction: row-reverse; (reversr the serial and show right side) */
+
+
+/*				display: flex;*/
+/*				flex-wrap: wrap; (move to next row)*/
+
+
+/*				display: flex;*/
+/*				flex-direction: column;  */
+/*				flex-wrap: wrap;  (move to next col)*/
+				
+
+/*				flex-wrap: wrap; /*(arrange the item by space)*/
+				
+
+			}
+
+			.container > *{
+				width: 300px;
+				height: 100px;
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: steelblue;
+			}
+
+			.container div:nth-of-type(even){
+				background-color: skyblue;
+			}
+
+
+			.div1{
+				
+
+			}
+
+			.div2{
+				
+				
+			}
+
+			.div3{
+				
+
+			}
+
+			.div4{
+				
+				
+			}
+			.div5{
+				
+				
+			}
+			.div6{
+				
+				
+			}
+			.div7{
+				
+
+			}
+			.div8{
+				
+				
+			}
+			.div9{
+				
+
+			}
+			.div10{
+				
+
+			}
+	
+
+		</style>	
+
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="div1">This is Div 1</div>
+			<div class="div2">This is Div 2</div>
+			<div class="div3">This is Div 3</div>
+			<!-- <div class="div4">This is Div 4</div>
+			<div class="div5">This is Div 5</div>
+			<div class="div6">This is Div 6</div>
+			<div class="div7">This is Div 7</div>
+			<div class="div8">This is Div 8</div>
+			<div class="div9">This is Div 9</div>
+			<div class="div10">This is Div 10</div> -->
+
+		</div>	
+
+		
+	</body>
+</html>

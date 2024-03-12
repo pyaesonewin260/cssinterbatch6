@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grit</title>
+		<style type="text/css">
+
+
+				body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center; /* hc not fix */
+				align-items: center;	/* vc  not fix */
+			}
+
+			.container{
+				width: 1200px;  /* default left */			
+				background-color: dimgray;
+				display: grid;
+
+				grid-template-columns: repeat(3, 1fr);
+				
+				
+
+			}
+
+			.container > *{
+/*				width: 200px;*/
+				height: 100px;
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: steelblue;
+			}
+
+			.container div:nth-of-type(even){
+				background-color: skyblue;
+			}
+
+
+			.div1{
+				grid-column: span 2;
+
+			}
+
+			.div2{
+				grid-column: span 2;
+				
+			}
+
+			.div3{
+				grid-column: span 2;				
+
+			}
+
+			.div4{
+				
+
+			}
+			.div5{
+				
+
+			}
+			.div6{
+				
+
+			}
+			.div7{
+				
+
+			}
+			.div8{
+				
+
+			}
+			.div9{
+				
+
+			}
+			.div10{
+				
+
+			}
+	
+
+		</style>
+
+		<!-- 10GD -->
+
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="div1">This is Div 1</div>
+			<div class="div2">This is Div 2</div>
+			<div class="div3">This is Div 3</div>
+			<div class="div4">This is Div 4</div>
+			<div class="div5">This is Div 5</div>
+			<div class="div6">This is Div 6</div>
+			<div class="div7">This is Div 7</div>
+			<div class="div8">This is Div 8</div>
+			<div class="div9">This is Div 9</div>
+			<div class="div10">This is Div 10</div>
+
+		</div>
+		
+		
+		
+
+		
+	</body>
+</html>

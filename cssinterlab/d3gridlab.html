@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Grid Lab</title>
+		<style type="text/css">
+			body{
+
+				height: 100vh;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container{
+
+				width: 1200px;
+				height: 800px;
+				background: lightgray;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				flex-wrap: wrap;
+
+/*				display: grid ;*/
+
+/*				grid-template-columns: auto auto auto;*/
+/*				grid-template-columns: 1fr repeat(3, 1fr 100px 1fr);*/
+/*				gap: 10px;*/
+
+/*				grid-template-columns: repeat(3, 1fr 100px);*/
+/*				grid-template-columns: repeat(3, 1fr);*/
+
+				/*grid-template-areas: 
+					"div1 div1 div1" 
+					"div2 div2 div3"
+					"div4 div5 div5" 
+					"div6 div7 div8" 
+					"div9 div10 div10";*/
+
+			}
+
+			.container > *{
+
+/*				height: 100px;*/
+/*				padding: 20px 0;*/
+
+				width: 300px;
+				height: 100px;
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: lightsalmon;
+			}
+
+			.container div:nth-of-type(even){
+				background-color: lightgoldenrodyellow;
+			}
+
+			.div1{
+/*				grid-area: div1;*/
+/*				grid-column: span 2;*/
+
+				order: 3;
+
+			}
+
+			.div2{
+/*				grid-area: div2;*/
+/*				grid-column: span 1;		*/
+				order: 8;
+			}
+
+			.div3{
+/*				grid-area: div3;*/
+/*				grid-column: span 1;*/
+				order: 1;
+			}
+
+			.div4{
+/*				grid-area: div4;	*/
+/*				grid-column: span 2;*/
+				order: 10;
+			}
+
+			.div5{
+/*				grid-area: div5;*/
+/*				grid-column: span 3;*/
+				order: 4;
+			}
+
+			.div6{
+/*				grid-area: div6;*/
+/*				grid-column: span 2;*/
+				order: 6;
+			}
+
+			.div7{
+/*				grid-area: div7;*/
+/*				grid-column: span 1;*/
+/*				grid-row: span 2;*/
+				order: 7;
+			}
+
+			.div8{
+/*				grid-area: div8;*/
+/*				grid-column: span 2;*/
+				order: 9;
+			}
+
+			.div9{
+/*				grid-area: div9;*/
+/*				grid-column: span 2;*/
+				order: 5;
+			}
+
+			.div10{
+/*				grid-area: div10;*/
+/*				grid-column: span 1;*/
+				order: 2;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div class="container">
+			
+			<div class="div1">DIV1</div>
+			<div class="div2">DIV2</div>
+			<div class="div3">DIV3</div>
+			<div class="div4">DIV4</div>
+			<div class="div5">DIV5</div>
+			<div class="div6">DIV6</div>
+			<div class="div7">DIV7</div>
+			<div class="div8">DIV8</div>
+			<div class="div9">DIV9</div>
+			<div class="div10">DIV10</div>
+			
+		</div>
+
+
+	</body>
+</html>

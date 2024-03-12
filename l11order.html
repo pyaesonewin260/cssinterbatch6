@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Order</title>
+		<style type="text/css">
+
+
+				body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center; /* hc not fix */
+				align-items: center;	/* vc  not fix */
+			}
+
+			.container{
+				width: 1200px;  /* default left */	
+				height: 800px;		
+				background-color: dimgray;
+
+				display: flex;  /*(order work use this cmd)*/
+				justify-content: center;
+				align-items: center;
+
+				flex-wrap: wrap; /*(arrange the item by space)*/
+				
+
+			}
+
+			.container > *{
+				width: 300px;
+				height: 100px;
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: steelblue;
+			}
+
+			.container div:nth-of-type(even){
+				background-color: skyblue;
+			}
+
+
+			.div1{
+				order: 2;
+
+			}
+
+			.div2{
+				order: 4;
+				
+			}
+
+			.div3{
+				order: 6;
+
+			}
+
+			.div4{
+				
+				order: 8;
+			}
+			.div5{
+				
+				order: 10;
+			}
+			.div6{
+				
+				order: 1;
+			}
+			.div7{
+				order: 3;
+
+			}
+			.div8{
+				
+				order: 5;
+			}
+			.div9{
+				order: 7;
+
+			}
+			.div10{
+				order: 9;
+
+			}
+	
+
+		</style>
+
+		<!-- 10GD -->
+
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="div1">This is Div 1</div>
+			<div class="div2">This is Div 2</div>
+			<div class="div3">This is Div 3</div>
+			<div class="div4">This is Div 4</div>
+			<div class="div5">This is Div 5</div>
+			<div class="div6">This is Div 6</div>
+			<div class="div7">This is Div 7</div>
+			<div class="div8">This is Div 8</div>
+			<div class="div9">This is Div 9</div>
+			<div class="div10">This is Div 10</div>
+
+		</div>
+		
+		
+		
+
+		
+	</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition Lab</title>
+
+		<style type="text/css">
+
+			/*.div1{
+				width: 300px;
+				height: 200px;
+				background-color: skyblue;
+				font-size: 20px;
+				color: #fff;
+
+				text-align: center;
+				line-height: 200px;
+
+				/*display: flex;
+				justify-content: center;
+				align-items: center;
+
+				transition: background-color 5s;
+
+				transition-property: background-color;
+				transition-duration: 3000ms;
+			}
+
+			.div1:hover{
+				background-color: lightseagreen;
+			}*/
+			
+
+			/*.div2{
+				width: 300px;
+				height: 200px;
+				background-color: gray;
+				color: #fff;
+				font-size: 20px;
+
+				text-align: center;
+				line-height: 200px;
+
+
+				transition-property: font-family,background-color;
+				transition-duration: 4s;
+
+				transition:	all 5s 3s;
+			}
+
+			.div2:hover{
+				font-family: sans-serif;
+				background-color: lightcyan;
+				color: #000;
+
+			}*/
+
+			.container{
+
+				width: 1200px;
+				height: 50px;
+				background-color: gray;
+				color: #fff;
+			}
+
+
+			.container .square{
+
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				border-radius: 5px;
+
+				text-align: center;
+				line-height: 50px;
+
+				transition: transform 5s;
+			}
+
+			.container .square:hover{
+				transform: translate(1050px);
+			}
+
+			#ease{
+				transition-timing-function: ease;
+			}
+
+			#linear{
+				transition-timing-function: linear;
+			}
+
+			#ease-in{
+				transition-timing-function: ease-in;
+			}
+
+			#ease-out{
+				transition-timing-function: ease-out;
+			}
+
+			#ease-in-out{
+				transition-timing-function: ease-in-out;
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<!-- <div class="div1">
+			Transition DIV1
+		</div>
+
+		<br/>
+		<hr/>
+
+		<div class="div2">
+			Transition DIV2
+		</div> -->
+
+		<div class="container">
+			<div id="ease" class="square">DIV 1 ease</div>
+		</div>
+
+		<br/>
+
+		<div class="container">
+			<div id="linear" class="square">DIV 2 linear</div>
+		</div>
+
+		<br/>
+
+		<div class="container">
+			<div id="ease-in" class="square">DIV 3 ease-in</div>
+		</div>
+
+		<br/>
+
+		<div class="container">
+			<div id="ease-out" class="square">DIV 4 ease-out</div>
+		</div>
+
+		<br/>
+
+		<div class="container">
+			<div id="ease-in-out" class="square">DIV 1 ease-in-out</div>
+		</div>
+			
+		
+
+
+
+
+
+	</body>
+</html>

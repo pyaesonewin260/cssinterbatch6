@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>d2part3</title>
+		<style rel="stylesheet" type="text/css">
+
+			body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container{
+				width: 1200px;
+				
+				background-color: gray;
+				display: grid;
+
+				/*grid-template-columns: auto;
+				grid-template-columns: 1fr 1fr 100px;
+				grid-template-columns: 1fr 100px 1fr 200px;*/
+
+				grid-template-columns: repeat(3,1fr);
+
+
+			}
+
+
+			.container > *{
+/*				width: 200px;*/
+				height: 100px;
+				
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: royalblue;
+			}
+			.container div:nth-of-type(even){
+				background-color: skyblue;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			
+			<div class="div">This is div1</div>
+			<div class="div">This is div2</div>
+			<div class="div">This is div3</div>
+			<div class="div">This is div4</div>
+			<div class="div">This is div5</div>
+			<div class="div">This is div6</div>
+			<div class="div">This is div7</div>
+			<div class="div">This is div8</div>
+			<div class="div">This is div9</div>
+			<div class="div">This is div10</div>
+			
+		</div>
+		
+	</body>
+</html>
